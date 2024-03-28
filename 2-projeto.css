@@ -1,0 +1,177 @@
+/* 
+position: static(padrão)-não aceita valores de top, bottom,right e left.
+position: fixed - fixa o elemento na tela 
+position: stacky - age cono um adesivo, fixa o elemento so onde eu determinar
+position: relative - posição relativa a posição inicial dele
+position: absolute - posição absoluta(fixa) a algum elemento ou a pagina
+                    - Se não tiver pai/ pai for static --> posiciona referente a 
+                    - Se o pai não for static --> posiciona refente ao pai
+
+*/
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+ }
+
+header{
+    margin-top: 47px;
+    margin-left: 42px;
+   
+
+
+}
+
+.botoes-header{
+    color: #17233D;
+    font-size: 20px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.875px;
+    margin-right: 30px;
+    text-decoration: none;
+
+    }
+.button-header{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500PX;
+    letter-spacing: 1px;
+    width: 124px;
+    height: 51px;
+    line-height: 24px;
+    border-radius: 6px;
+    border: 1px solid #4CB538;
+    background: #6FBF44;
+    cursor: pointer;
+    }
+.button-main{
+    margin-top: 55PX;
+    color: #6FBF44;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: none;
+    background: #FFF;
+    cursor:pointer;
+}
+
+ img{
+    
+    box-sizing: content-box;
+    display: inline-block;
+    opacity: 0.5; /* deixa a imagem transparente*/
+ }
+ section{
+    display: inline-block;
+    margin-left: 114.73PX;
+ }
+ h1{
+    color: #161A49;
+     font-size: 62px;
+   
+    font-weight: 700;
+   
+    letter-spacing: 0.596px;
+    width: 582PX;
+
+
+
+
+    }
+p{
+    width: 515px;
+    color: #4B505A;
+    font-size: 25px;
+    font-weight: 400;
+   
+    letter-spacing: 0.5px;
+    margin-top: 47px;
+
+
+}
+.caixa-main{
+    margin: 172px 0 308px 107px;
+   
+}
+  
+    @media screen and (max-width: 770px){
+        div{
+            width: 100%;
+            height: 50%;
+            padding: 0;
+            margin: 0;
+          
+
+        }
+        .botoes-header{
+            display: none;
+
+        }
+        
+        .caixa-main{
+            position: fixed;
+    
+            margin: 80px 30px 0 50px;
+        }
+          section{
+            display: contents;
+           
+
+        }
+        .button-header{
+           margin: 5px 0 0 255px;
+           width:120px;
+
+        }
+          img{
+            box-sizing: border-box;
+            position: fixed;
+            width: 350px;
+            margin: 340px 50px 30px 10px;
+            opacity: 10;
+        
+         
+
+        }
+          h1{
+            font-size:32px;
+             text-align: center;
+             height: 60px;
+             width: 278px;
+             margin-left: 20px;
+           
+
+
+        
+
+            }
+            p{
+                width: 304Px;
+                height: 165px ;
+                font-size: 19 px;
+                text-align: center;
+                
+                 }
+
+
+            .button-main{
+            margin-left: 80px;
+            margin-top: 5px;
+            }
+            
+          
+
+    
+    
+
+
+
+
+
+
+}
